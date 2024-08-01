@@ -1,0 +1,73 @@
+<!-- Box shadow and Text shadow -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box shadow text shadow</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .card {
+      padding: 23px 12px;
+      margin: 23px 12px;
+      /* box-shadow: offset-x offset-y color; syntax */
+      /* box-shadow: offset-x offset-y  blur-radius color; syntax */
+      /* box-shadow: offset-x offset-y blur-radius spread-radiuscolor; syntax */
+
+      /* border: 2px solid red; */
+      background-color: rgb(195, 163, 163);
+      background-color: rgb(195, 163, 163);
+      /* box-shadow: 10px 13px green; */
+      /* box-shadow: -10 -13px green; */
+      /* box-shadow: 7px 5px 100px rgb(13, 107, 13); */
+      /* box-shadow: -7px -5px 100px rgb(13, 107, 13); */
+      /* box-shadow: -7px -5px 10px 34px  rgb(13, 107, 13); */
+      /* box-shadow: -7px -5px 10px 34px  rgba(33, 137, 189, 0.5) */
+
+      box-shadow: inset 3px 5px green;
+    }
+    .card h2{
+        /* text-shadow: 3px 4px white; */
+        /* text-shadow: 3px 4px 6px white; */
+        /* Negative */
+        text-shadow: -3px -4px 6px white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" id="car-1">
+        <h2>This is c++ course</h2>
+        <p>
+          i have started this c++ course which does not mean that we will stop
+          this course. we will continue this course to completion. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Natus expedita nostrum
+          blanditiis, omnis quas hic magni assumenda autem iusto dolorem. Esse,
+          nam. Non beatae tempora voluptatibus at cum iusto. Quas iusto omnis
+          dolor laboriosam.
+        </p>
+      </div>
+      <div class="card" id="car-2">
+        <h2>This is HTML course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam culpa
+          ratione ullam dolor illum distinctio, sequi debitis reprehenderit
+          expedita cumque ex exercitationem laudantium perspiciatis adipisci
+          numquam eveniet, neque eius incidunt id! Aperiam, ratione enim.
+        </p>
+      </div>
+      <div class="card" id="car-3">
+        <h2>card3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error
+          maxime nesciunt reprehenderit dolore similique natus harum porro
+          praesentium architecto placeat aperiam numquam, est culpa deleniti
+          vero excepturi hic aliquam dignissimos reiciendis voluptatem earum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

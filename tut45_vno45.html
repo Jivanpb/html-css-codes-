@@ -1,0 +1,116 @@
+<!-- Using media quaries with css grid -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS media quaries</title>
+  </head>
+  <style>
+    @media only screen and (max-width: 300px) {
+      body {
+        background-color: red;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      aside {
+        display: none;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+      body {
+        background-color: blue;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      aside {
+        display: none;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+      body {
+        background-color: yellow;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+    @media (min-width: 800px) {
+      body {
+        background-color: green;
+      }
+    }
+    .container {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section aside"
+        "footer footer footer footer";
+    }
+    .Bdr {
+      border: 2px solid black;
+      padding: 10px 23px;
+      background-color: wheat;
+    }
+    nav {
+      grid-area: navbar;
+    }
+    section {
+      grid-area: section;
+    }
+    aside {
+      grid-area: aside;
+    }
+    #footer {
+      grid-area: footer;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav class="Bdr">
+        <span>Home</span>
+        <span>About</span>
+        <span>Service</span>
+        <span>Contact us</span>
+      </nav>
+      <section class="Bdr">
+        <h2>Learn CSS in Hindi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit provident, accusamus officia alias officiis corporis perspiciatis, dolores impedit et neque facilis id fuga obcaecati repudiandae, amet asperiores quaerat pariatur laboriosam minus quibusdam. Illo consequatur ipsam, nostrum cum accusantium quibusdam quas voluptatem magnam consequuntur odit soluta molestiae quis asperiores. Eius, sed itaque? Commodi aspernatur recusandae ipsum deleniti, ipsa alias aliquid voluptate cum ex iure, adipisci expedita. Mollitia earum non debitis repellat accusamus ducimus ab repudiandae. Doloremque eaque excepturi iusto. Placeat, expedita dolores itaque, fugiat dicta recusandae voluptas enim nulla aliquid cum, neque totam numquam nemo sit? Ratione, veniam ad rerum dicta necessitatibus quam officiis ab sint maiores perferendis sequi perspiciatis labore odio incidunt exercitationem architecto suscipit sed optio. Facilis, maxime! Laudantium, iusto voluptate.</p>
+      </section>
+      <aside class="Bdr">
+        <h1>More About us</h1>
+      </aside>
+    </div>
+    <footer class="Bdr">Copyright code with jivan 2024</footer>
+  </body>
+</html>
